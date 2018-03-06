@@ -69,7 +69,6 @@ class KNearestNeighbor(object):
 		sort 是应用在 list 上的方法，sorted 可以对所有可迭代的对象进行排序操作。
 		list 的 sort 方法返回的是对已经存在的列表进行操作，而内建函数 sorted 方法返回的是一个新的 list，而不是在原来的基础上进行的操作。'''
 		sortedvotes = sorted(votes.items(),key=operator.itemgetter(1),reverse=True)
-		print(sortedvotes)
 		#返回排序后的第一行的第一个值，即类别
 		return sortedvotes[0][0]
 
